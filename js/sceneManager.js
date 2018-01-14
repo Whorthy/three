@@ -14,7 +14,6 @@ function SceneManager(canvas) {
   const controls = new THREE.OrbitControls(camera);
 
   controls.update();
-  camera.position.z = 5;
 
   function buildScene() {
     const scene = new THREE.Scene();
@@ -38,6 +37,7 @@ function SceneManager(canvas) {
     const nearPlane = 0.1;
     const farPlane = 1000;
     const camera = new THREE.PerspectiveCamera(fieldOfView, aspectRatio, nearPlane, farPlane);
+    camera.position.z = 5;
 
     return camera;
   }
