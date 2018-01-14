@@ -1,7 +1,7 @@
 function SceneSubjects(scene) {
 
-  const color1 = 0xffff00
-  const color2 = 0xbb00ff
+  const color1 = 0x00bbff
+  const color2 = 0xaa00ff
   const color3 = 0x00ffaa
 
   const light1 = new THREE.PointLight( color1, 1, 100);
